@@ -193,3 +193,15 @@ The p-value from the chi-squared test is 0.0000000001414 which is less than 0.05
 
 
 # Overall Results and Conclusions
+
+## Males     
+From the data gathered we can conclude that the vaccine is effective in preventing covid-19 in males. The numerical table shows that 26.20% men contracted covid-19 and received the vaccine compared to men who were given the placebo which was 73.80%. The p-value from the chi-squared was 0.00000000000000022 which is less than 0.05 therefore we reject the null hypothesis. The odds of the vaccine being effective in men is about a 2.8 chance, so we can assume that the vaccine will be effective in preventing covid19 in males.  
+
+##Females      
+From the data we gathered, we can conclude that the vaccine is effective in preventing covid-19 in females. The numerical tables shows that 35.07% women who contracted covid-19 received the vaccine compared to the women who received the placebo which was 64.93%. The p-value from the chi-squared test was 0.00000001914 which is less than 0.05 therefore we reject the null hypothesis. The odds of the vaccine being effective in women is about a 1.86 chance. We can assume that the vaccine is effective in preventing covid-19 in females based on the data.      
+
+##LGBTQ       
+With the data we gathered, we can conclude that the vaccine exhibits effectiveness in preventing covid19 in people who are LGBTQ. The numerical tables shows that 20% of people who are LGBTQ contracted covid-19 and also received the vaccine. The number of LGBTQ people who received the placebo was 80% which means the vaccine is effective in preventing covid19 in people who are LGBTQ. The p-value from the chi-squared test is 0.000002266 which is less than 0.05 therefore we reject the null hypothesis. The odds ratio from the fisher's exact test is 4.27 which means the vaccine has a 4.27 chance of being effective in preventing covid19 in people who are LGBTQ. It is safe to assume that the new preventative vaccine will be effective in people who are LGBTQ. 
+
+##Drug Users      
+With the data we gathered, we can conclude that the vaccine is less likely to be effective in preventing covid-19 in drug users. In the numerical table, approximately 91.67% of drug users who contracted covid-19 also received the vaccine compared to drug users who received the placebo which was 8.33%. The p-value from the chi-squared test was 0.0000000001414 which is less than 0.05 therefore we reject the null hypothesis. The odds ratio from the fisher's exact test is 0.087 which means that the vaccine is less likely to effective in people who are drug users. From these results we can assume that the vaccine will not be effective in preventing covid19 in people who are drug users.   
