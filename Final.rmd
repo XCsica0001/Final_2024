@@ -86,6 +86,15 @@ barchartGC(~infected + treatment,data=Females, type="percent")
 
 The bar graph shows that the vaccine is more effective in women who contracted covid-19 compared to women who were given the placebo.
 
+## Numerical Results  
+```{r}
+table1 <- xtabs(~infected + treatment, data=Females)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The numerical results shows that about 35.07% of women who received the vaccine contracted covid-19. However, the women who contracted covid-19 received the placebo which was 64.93% which implies that the vaccine is effective in preventing covid-19 in women.   
+
 
 ## LGBTQ
 
