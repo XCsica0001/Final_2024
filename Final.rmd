@@ -43,7 +43,17 @@ head(Males)
 barchartGC(~infected + treatment,data=Males)
 barchartGC(~infected + treatment,data=Males, type="percent")
 ```
-The graph above shows that the vaccine is effective in preventing covid19 in males. The amount of males who received the vaccine and contracted covid19 was lower than the men who were given the placebo.
+The graph above shows that the vaccine is effective in preventing covid19 in males. The amount of males who received the vaccine and contracted covid19 was lower than the men who were given the placebo.'
+
+## Numerical Results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=Males)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The table above shows that only 26.20% of men that were given the vaccine and contracted covid-19, while 73.80% of men those who received the placebo contracted covid-19.
 
 ## Females
 
