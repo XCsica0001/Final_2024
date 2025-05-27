@@ -150,8 +150,24 @@ fisher.test(table1)
 The p-value from the chi-squared test is 0.000002266 which is less than 0.05 therefore we reject the null hypothesis. The odds ratio from the fisher's exact test is 4.27 which means that the vaccine has a 4.27 chance of being effective in preventing covid19 in people who are LGBTQ.   
 
 
-
 ## Druggies
+
+## Methods  
+$H_0$ The preventative vaccine does not exhibit its effective in people who are drug users.    
+$H_A$ The preventative vaccine exhibits its effective in people who are drug users.  
+Cat~Cat
+
+
+```{r}
+DrugUser = FinalData[FinalData$DrugUser=='yes',]
+```
+
+## Graphical Results    
+```{r}
+barchartGC(~infected + treatment,data=DrugUser)
+barchartGC(~infected + treatment,data=DrugUser, type="percent")
+```
+The bar graphs shows that vaccine is more likely to be less effective in people who are drug users.The amount of people who received the vaccine and contracted covid19 passed 80% which is significantly higher than drug users who received the placebo. 
 
 
 # Overall Results and Conclusions
