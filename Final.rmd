@@ -55,6 +55,16 @@ colPerc(table1)
 
 The table above shows that only 26.20% of men that were given the vaccine and contracted covid-19, while 73.80% of men those who received the placebo contracted covid-19.
 
+##Inferential Results  
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+Because the p-value from the chi-squared test is 0.00000000000000022, that means that is less than 0.05, we must reject the null hypothesis. The odds ratio from fisher's test was 2.815 which means that the vaccine has a 2.8 chance of being effective in males.  
+
+
 ## Females
 
 
