@@ -95,6 +95,16 @@ colPerc(table1)
 
 The numerical results shows that about 35.07% of women who received the vaccine contracted covid-19. However, the women who contracted covid-19 received the placebo which was 64.93% which implies that the vaccine is effective in preventing covid-19 in women.   
 
+## inferential Results   
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The p-value from the chi-squared test is 0.00000001914 which is less than 0.05 therefore we reject the null hypothesis. The odds ratio from the fisher's exact test is 1.856 which means that there is approximately a 1.86 chance that the vaccine will be effective in women.
+
+
 
 ## LGBTQ
 
