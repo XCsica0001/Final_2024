@@ -139,6 +139,15 @@ colPerc(table1)
 
 The table shows that 20% of LGBTQ people who received the vaccine also contracted covid-19. Compared to the LGBTQ people who received the placebo and contracted vaccine which is 80%, we can assume the vaccine is effective at preventing LGBTQ people from contracting covid-19.       
 
+## Infrential Results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The p-value from the chi-squared test is 0.000002266 which is less than 0.05 therefore we reject the null hypothesis. The odds ratio from the fisher's exact test is 4.27 which means that the vaccine has a 4.27 chance of being effective in preventing covid19 in people who are LGBTQ.   
 
 
 
