@@ -153,6 +153,7 @@ The p-value from the chi-squared test is 0.000002266 which is less than 0.05 the
 ## Druggies
 
 ## Methods  
+
 $H_0$ The preventative vaccine does not exhibit its effective in people who are drug users.    
 $H_A$ The preventative vaccine exhibits its effective in people who are drug users.  
 Cat~Cat
@@ -168,6 +169,16 @@ barchartGC(~infected + treatment,data=DrugUser)
 barchartGC(~infected + treatment,data=DrugUser, type="percent")
 ```
 The bar graphs shows that vaccine is more likely to be less effective in people who are drug users.The amount of people who received the vaccine and contracted covid19 passed 80% which is significantly higher than drug users who received the placebo. 
+
+## Numerical Results  
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=DrugUser)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The table shows that 91.67% of drug users who contracted covid-19 also received the vaccine. This implies that the preventative vaccine is not effective in people who are drug users because the amount of drug users who contracted covid-19 and received the placebo was 8.33%.
 
 
 # Overall Results and Conclusions
