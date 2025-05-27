@@ -55,7 +55,7 @@ colPerc(table1)
 
 The table above shows that only 26.20% of men that were given the vaccine and contracted covid-19, while 73.80% of men those who received the placebo contracted covid-19.
 
-##Inferential Results  
+## Inferential Results  
 ```{r}
 chisq.test(table1)
 chisqtestGC(table1)
@@ -67,6 +67,24 @@ Because the p-value from the chi-squared test is 0.00000000000000022, that means
 
 ## Females
 
+##Methods  
+$H_0$: The preventative vaccine does not exhibit its effective in females        
+$H_A$: The preventative vaccine exhibits its effective in females.  
+Cat~Cat. 
+
+```{r}
+Females = FinalData[FinalData$sex=='F',]
+head(Females)
+```
+
+## Graphical Results
+
+```{r}
+barchartGC(~infected + treatment,data=Females)
+barchartGC(~infected + treatment,data=Females, type="percent")
+```
+
+The bar graph shows that the vaccine is more effective in women who contracted covid-19 compared to women who were given the placebo.
 
 
 ## LGBTQ
