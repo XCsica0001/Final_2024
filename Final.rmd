@@ -180,5 +180,16 @@ colPerc(table1)
 
 The table shows that 91.67% of drug users who contracted covid-19 also received the vaccine. This implies that the preventative vaccine is not effective in people who are drug users because the amount of drug users who contracted covid-19 and received the placebo was 8.33%.
 
+## Inferential Results      
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The p-value from the chi-squared test is 0.0000000001414 which is less than 0.05 therefore we reject the null hypothesis. The odds ratio from the fisher's exact test is 0.087 which means that the vaccine has a lower chance of being effective in people who are drug users.
+
+
 
 # Overall Results and Conclusions
