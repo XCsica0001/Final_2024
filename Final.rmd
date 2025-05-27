@@ -67,7 +67,7 @@ Because the p-value from the chi-squared test is 0.00000000000000022, that means
 
 ## Females
 
-##Methods  
+## Methods 
 $H_0$: The preventative vaccine does not exhibit its effective in females        
 $H_A$: The preventative vaccine exhibits its effective in females.  
 Cat~Cat. 
@@ -108,6 +108,16 @@ The p-value from the chi-squared test is 0.00000001914 which is less than 0.05 t
 
 ## LGBTQ
 
+## Methods 
+
+$H_0$ The preventative vaccine does not exhibit its effective in people who are LGBTQ.        
+$H_A$ The preventative vaccine exhibits its effective in people who are LGBTQ.    
+Cat~Cat
+
+```{r}
+gay = FinalData[FinalData$LGBTQ=='gay',]
+head(gay)
+```
 
 
 ## Druggies
